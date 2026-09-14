@@ -40,4 +40,38 @@
     align-items: center;
     min-height: 44px;
   }
+
+  /* Keep the service list compact on touch screens. Each row still has a
+     generous visual preview, but no longer leaves a full-screen gap. */
+  .home-page .services-v3-head { margin-bottom: 38px !important; }
+  .home-page .service-row-v59 {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+  .home-page .service-row-v59.is-active,
+  .home-page .service-row-v59:hover,
+  .home-page .service-row-v59:focus-visible {
+    padding: 18px 14px !important;
+  }
+  .home-page .service-row-v59::after {
+    height: clamp(170px, 54vw, 260px) !important;
+    margin-top: 12px !important;
+  }
+
+  /* Prevent long client names and contact details from creating horizontal
+     overflow on narrow Safari viewports. */
+  .home-page .client-marquee { width: 100%; max-width: 100%; }
+  .home-page .client-track { max-width: none; }
+  .home-page .contact-email-copy { overflow-wrap: anywhere; word-break: break-word; }
+  .home-page .final-cta-v9,
+  .home-page .footer,
+  .home-page .footer-main { overflow-x: hidden; }
+
+  /* A monochrome arrow is consistent with the rest of the interface and
+     avoids platform emoji rendering. */
+  .home-page .case-hover-cta b,
+  .home-page .all-works span,
+  .home-page .service-row-v59 > b,
+  .home-page .final-actions a,
+  .home-page .contact-social-secondary a { font-variant-emoji: text; }
 }
