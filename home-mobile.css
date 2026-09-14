@@ -1,0 +1,43 @@
+/* Home hero only: preserve the approved desktop layout. */
+@media (max-width: 900px) {
+  .home-page .site-header {
+    grid-template-columns: minmax(0, 1fr) !important;
+    column-gap: 0;
+  }
+  .home-page .site-header .nav {
+    position: static !important;
+    width: 100% !important;
+    min-width: 0;
+    transform: none !important;
+    justify-self: stretch !important;
+    gap: clamp(12px, 4vw, 28px) !important;
+    flex-wrap: wrap;
+  }
+  .home-page .site-header .nav a {
+    min-height: 44px;
+    white-space: nowrap;
+  }
+  .home-page .hero-v2 {
+    /* svh keeps the CTA above browser chrome; short screens can scroll. */
+    min-height: max(100svh, 560px, calc(392px + 42vw)) !important;
+  }
+  .home-page .hero-v2-inner {
+    top: calc(56% - 56px) !important;
+  }
+  .home-page .hero-logo {
+    /* Add 12px of breathing room on each side of the existing logo. */
+    width: calc(86vw - 24px) !important;
+    max-width: 100%;
+  }
+  .home-page .hero-statement {
+    line-height: 1.06 !important;
+  }
+  .home-page .hero-bottomline {
+    bottom: calc(42px + env(safe-area-inset-bottom, 0px)) !important;
+  }
+  .home-page .hero-bottomline a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
