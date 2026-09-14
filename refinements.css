@@ -73,6 +73,18 @@ section.managed-video-host>.video-toggle{top:180px;bottom:auto}
 .portfolio-page-v57 .nav{position:static!important;transform:none!important;width:auto!important;gap:clamp(24px,3vw,48px)!important;justify-self:center!important}
 .portfolio-page-v57 .nav a{font-size:14px!important;line-height:1.4!important;opacity:1;color:#c6c6c6}
 .portfolio-page-v57 .nav a[aria-current],.portfolio-page-v57 .nav a:hover{color:#fff}
+
+/* Keep the desktop navigation on the same optical axis as the centered hero mark. */
+@media (min-width:901px){
+  .home-page .site-header .nav{
+    position:absolute;
+    left:50%;
+    top:0;
+    height:122px;
+    transform:translateX(-50%);
+    white-space:nowrap;
+  }
+}
 .portfolio-page-v57 .header-contact{transform:none!important;align-items:flex-end!important;gap:4px!important;padding:0!important}
 .portfolio-page-v57 .header-contact a{font-size:13px!important;line-height:1.35!important;opacity:1;color:#c6c6c6}
 .portfolio-page-v57 .header-contact .contact-link{margin-top:6px!important;color:#fff;border-color:#aaa}

@@ -1,4 +1,6 @@
 window.SPACE_CASES = [
+  {"title":"Старт продаж VOLGA в Бизнес Кар","subtitle":"Двухдневное событие · Москва · 2026","category":"automotive","brand":"VOLGA / БИЗНЕС КАР","slug":"start-prodazh-volga-v-biznes-kar","priority":1,"localUrl":"volga-business-car.html","image":"assets/volga-business-car/0H7A0001.jpg"},
+
   {
     "title": "ФГП / Стратегическая сессия",
     "subtitle": "400+ гостей · Москва",
